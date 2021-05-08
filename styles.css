@@ -1,0 +1,258 @@
+/* -------------Background------------ */
+.page-bg{
+  background-image: url("images/bg-top.svg"),url("images/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-color: hsl(240, 78%, 98%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  background-position: 1095px 0px, 0px 470px;
+}
+/* ---------------------------------- */
+
+/* ----------Page Content------------ */
+.price-container{
+  padding: 70px;
+}
+
+.our-pricing-heading{
+  font-weight: 700;
+  color: hsl(233, 13%, 49%);
+  text-align: center;
+}
+.monthly-prices,.annual-prices{
+  display: inline-block;
+  padding: 20px 20px;
+  font-weight: 700;
+  color: hsl(234, 14%, 74%);
+}
+.annual-prices{
+  padding-left: 560px;
+}
+/* ---------------------------------- */
+/* ----------Toggle switch----------- */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(234, 14%, 74%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 3.6px;
+  background-color: white;
+  -webkit-transition: .3s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(135deg, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px linear-gradient(135deg, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 70%;
+}
+/* ---------------------------------- */
+/* ----------Basic Pricing Cards----------- */
+
+.basic-charge-card{
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  width: 300px;
+  height: 390px;
+  margin-top: 50px;
+  margin-left: 225px;
+  text-align: center;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.master-charge-card{
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  height: 390px;
+  margin: 50px 825px;
+  text-align: center;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.basic-charges,.master-charges{
+  padding-top: 30px;
+  font-weight: 700;
+  color: hsl(233, 13%, 49%);
+}
+.basic-amount,.master-amount{
+  font-weight: 700;
+  color: hsl(232, 13%, 33%);
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+.basic-data-plan,.master-data-plan{
+  font-weight: 700;
+  color: hsl(233, 13%, 49%);
+  margin-bottom: 0px;
+}
+.horizontal-line-separator{
+  width: 80%;
+  margin-left: 25px !important;
+}
+.basic-learn-more-button{
+  padding: 2% 5%;
+  width: 250px;
+  border-radius: 4px;
+  background: linear-gradient(90deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  border: none;
+}
+
+.basic-learn-more-button:hover{
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
+.master-learn-more-button{
+  padding: 2% 5%;
+  width: 250px;
+  border-radius: 4px;
+  background: linear-gradient(90deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  border: none;
+}
+.master-learn-more-button:hover{
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
+/* --------------------------------------- */
+
+/* -------Professional Card------------ */
+.professional-charge-card{
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  height: 450px;
+  margin: 15px 525px;
+  background: linear-gradient(90deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 10px;
+
+}
+.professional-charges{
+  padding-top: 65px;
+  font-weight: 700;
+  color: #fff;
+}
+.professional-amount{
+  font-weight: 700;
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+.professional-data-plan{
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.horizontal-line-separator-pro{
+  width: 80%;
+  margin-left: 25px !important;
+  color: #fff;
+}
+.professional-learn-more-button{
+  padding: 2% 5%;
+  width: 250px;
+  border-radius: 4px;
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+  border: none;
+}
+.professional-learn-more-button:hover{
+  background: linear-gradient(90deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* ------------------------------------ */
+/* -------------Footer--------------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  top: 500px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ----------------------------------- */
+/* --------Mobile Version--------- */
+@media (max-width: 375px) {
+  .price-container{
+    width: 375px;
+  }
+  .our-pricing-heading{
+    font-size: 25px;
+  }
+
+  .basic-charge-card,.professional-charge-card,.master-charge-card{
+    display: inline;
+    margin-left: 35px;
+    border-radius: 10px;
+  }
+
+  .professional-charge-card{
+    margin-top: 480px;
+  }
+  .master-charge-card{
+    margin-top: 980px;
+  }
+ .annual-prices{
+   padding-left: 70px;
+ }
+ .attribution{
+   top: 1400px;
+ }
+}
